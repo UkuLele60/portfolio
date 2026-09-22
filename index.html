@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio | Prénom Nom</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <p class="eyebrow">Portfolio géomatique</p>
+      <h1>Prénom Nom</h1>
+      <p class="intro">
+        Géomatique, SIG, cartographie, analyse spatiale et traitement de données.
+      </p>
+
+      <nav class="filters" aria-label="Catégories">
+        <a href="#professionnel" class="pill">Réalisations professionnelles</a>
+        <a href="#academique" class="pill">Réalisations académiques</a>
+        <a href="#personnel" class="pill">Réalisations personnelles</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="professionnel" class="project-section">
+      <div class="section-heading">
+        <h2>Réalisations professionnelles</h2>
+        <p>Projets réalisés en stage, alternance, emploi ou mission.</p>
+      </div>
+
+      <div class="project-grid">
+        <article class="project-card">
+          <a class="card-link" href="projets/accessibilite.html">
+            <div class="card-content">
+              <p class="project-type">Projet professionnel</p>
+              <h3>Analyse d’accessibilité aux services publics</h3>
+              <p class="project-description">
+                Analyse spatiale des temps d’accès aux équipements et production d’indicateurs cartographiques.
+              </p>
+              <div class="tags">
+                <span>Python</span>
+                <span>QGIS</span>
+                <span>GeoPandas</span>
+              </div>
+            </div>
+            <div class="card-footer">Voir le projet</div>
+          </a>
+        </article>
+
+        <article class="project-card">
+          <a class="card-link" href="projets/webmapping.html">
+            <div class="card-content">
+              <p class="project-type">Projet professionnel</p>
+              <h3>Webmapping des mobilités</h3>
+              <p class="project-description">
+                Mise en valeur de flux de déplacements dans une interface cartographique interactive.
+              </p>
+              <div class="tags">
+                <span>ArcGIS Online</span>
+                <span>JavaScript</span>
+              </div>
+            </div>
+            <div class="card-footer">Voir le projet</div>
+          </a>
+        </article>
+      </div>
+    </section>
+
+    <section id="academique" class="project-section">
+      <div class="section-heading">
+        <h2>Réalisations académiques</h2>
+        <p>Travaux universitaires, mémoires, ateliers et projets de groupe.</p>
+      </div>
+
+      <div class="project-grid">
+        <article class="project-card">
+          <a class="card-link" href="projets/projet-academique.html">
+            <div class="card-content">
+              <p class="project-type">Projet académique</p>
+              <h3>Cartographie d’un phénomène territorial</h3>
+              <p class="project-description">
+                Construction d’une méthodologie, traitement des données et restitution cartographique.
+              </p>
+              <div class="tags">
+                <span>ArcGIS Pro</span>
+                <span>Excel</span>
+                <span>R</span>
+              </div>
+            </div>
+            <div class="card-footer">Voir le projet</div>
+          </a>
+        </article>
+      </div>
+    </section>
+
+    <section id="personnel" class="project-section">
+      <div class="section-heading">
+        <h2>Réalisations personnelles</h2>
+        <p>Expérimentations, cartes, scripts et projets menés en autonomie.</p>
+      </div>
+
+      <div class="project-grid">
+        <article class="project-card">
+          <a class="card-link" href="projets/projet-personnel.html">
+            <div class="card-content">
+              <p class="project-type">Projet personnel</p>
+              <h3>Exploration cartographique personnelle</h3>
+              <p class="project-description">
+                Projet libre mêlant collecte, traitement et visualisation de données géographiques.
+              </p>
+              <div class="tags">
+                <span>QGIS</span>
+                <span>Python</span>
+              </div>
+            </div>
+            <div class="card-footer">Voir le projet</div>
+          </a>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2026 Prénom Nom</p>
+    </div>
+  </footer>
+</body>
+</html>
