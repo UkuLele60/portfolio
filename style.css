@@ -28,6 +28,10 @@ a {
   border-bottom: 1px solid #edf0f4;
 }
 
+.site-header h1 {
+  font-size: clamp(1.8rem, 4vw, 3rem);
+}
+
 .eyebrow {
   margin: 0 0 4px;
   color: #0057d9;
@@ -152,9 +156,6 @@ h1 {
 
 .tags span {
   padding: 5px 9px;
-  color: #315a85;
-  background: #f3f7fb;
-  border: 1px solid #d5e2ef;
   border-radius: 999px;
   font-size: 0.82rem;
 }
@@ -264,4 +265,79 @@ h1 {
   .card-link {
     min-height: 0;
   }
+}
+
+.phone-frame {
+  width: 430px;
+  height: 860px;
+  margin: 32px auto;
+  border-radius: 28px;
+  overflow: hidden;
+  background: #ffffff;
+  box-shadow: 0 12px 35px rgba(17, 24, 39, 0.12);
+}
+
+.phone-frame iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  display: block;
+}
+
+.project-link {
+  text-align: center;
+  margin-top: 18px;
+}
+
+/* Développement / programmation */
+.tags span.dev {
+  background-color: #f3f0ff;
+  color: #5b3f91;
+  border: 1px solid #ddd3f2;
+}
+
+/* Bases de données */
+.tags span.database {
+  background-color: #eef6ff;
+  color: #1d4f91;
+  border: 1px solid #cfe0f5;
+}
+
+/* SIG / cartographie */
+.tags span.gis {
+  background-color: #edf8f1;
+  color: #2f6b49;
+  border: 1px solid #cfe7d7;
+}
+
+/* Enquêtes / analyse */
+.tags span.analysis {
+  background-color: #fff5e8;
+  color: #8a5a1f;
+  border: 1px solid #f0dcc0;
+}
+
+.tags span.neutral {
+  background-color: #f4f5f7 !important;
+  color: #5f6672 !important;
+  border: 1px solid #c9ced6 !important;
+}
+
+.youtube-video {
+  position: relative;
+  width: 100%;
+  max-width: 850px;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  border-radius: 14px;
+  margin-top: 24px;
+}
+
+.youtube-video iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
 }

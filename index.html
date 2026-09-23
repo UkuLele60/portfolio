@@ -5,26 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio | Léontine Grillon</title>
   <link rel="icon" type="image/png" href="images/favicon.png">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css?v=10">
 </head>
 <body>
   <header class="site-header">
     <div class="container">
       <p class="eyebrow">Portfolio</p>
       <h1>Léontine Grillon</h1>
-      <p class="intro">
-        Je suis géomaticienne, intéressée par l'actualité politique et climatique.
-      </p>
-
-          <a class="cv-link" href="documents/cv.pdf" download>
-      Consulter mon CV
-    </a>
-
     <br>
-     <br>
-      <br>
 
       <nav class="filters" aria-label="Catégories">
+        <a href="#presentation" class="pill">Présentation</a>
         <a href="#professionnel" class="pill">Réalisations professionnelles</a>
         <a href="#academique" class="pill">Réalisations académiques</a>
         <a href="#personnel" class="pill">Réalisation personnelle</a>
@@ -40,23 +31,35 @@
       </div>
 
       <div class="project-grid">
-        <article class="project-card">
-          <a class="card-link" href="projets/creation_fiche_catalogue.html">
-            <div class="card-content">
-              <p class="project-type">Mission professionnelle</p>
-              <h3>Utilisation des outils de la Géoplateforme et de cartes.gouv</h3>
-              <p class="project-description">
-                Création via API de fiches de données sur le catalogue cartes.gouv avec services de diffusion (flux, téléchargement).
-              </p>
-              <div class="tags">
-                <span>Python</span>
-                <span>API Isochrones</span>
-                <span>API cartes.gouv</span>
-              </div>
-            </div>
-            <div class="card-footer">Voir la mission</div>
-          </a>
-        </article>
+
+  <article class="project-card">
+  <a class="card-link" href="projets/creation_fiche_catalogue.html">
+
+    <div class="card-content">
+      <p class="project-type">Mission professionnelle</p>
+
+      <h3>
+        Utilisation des outils de la Géoplateforme et de cartes.gouv
+      </h3>
+
+      <p class="project-description">
+        Création via API de fiches de données sur le catalogue cartes.gouv
+        avec services de diffusion (flux, téléchargement).
+      </p>
+
+      <div class="tags">
+        <span class="dev">Python</span>
+        <span class="dev">API Isocrones</span>
+        <span class="dev">API cartes.gouv</span>
+      </div>
+    </div>
+
+    <div class="card-footer">
+      Voir la mission
+    </div>
+
+  </a>
+</article>
 
         <article class="project-card">
           <a class="card-link" href="projets/superset.html">
@@ -67,10 +70,10 @@
                 Création de dashboards sur Superset pour le Géoportail de l’Urbanisme, mise en place de bases PostgreSQL, construction par requêtes SQL d’indicateurs. 
               </p>
               <div class="tags">
-                <span>PostgreSQL</span>
-                <span>PostGIS</span>
-                <span>SQL</span>
-              </div>
+  <span class="database">PostgreSQL</span>
+  <span class="database">PostGIS</span>
+  <span class="database">SQL</span>
+</div>
             </div>
             <div class="card-footer">Voir la mission</div>
           </a>
@@ -85,24 +88,7 @@
       </div>
 
       <div class="project-grid">
-        <article class="project-card">
-          <a class="card-link" href="projets/memoires.html">
-            <div class="card-content">
-              <p class="project-type">Projet académique</p>
-              <h3>Mémoires de Master 1 et 2</h3>
-              <p class="project-description">
-                Les deux mémoires que j'ai réalisés portent sur les perceptions des enjeux liés à la cartographie des dessertes forestières et des outils IGN associés par leurs publics cibles (DDT et transporteurs de bois).
-              </p>
-              <div class="tags">
-                <span>Limesurvey</span>
-                <span>Enquête qualitative</span>
-                <span>Enquête quantitative</span>
-                <span>Analyse de données</span>
-              </div>
-            </div>
-            <div class="card-footer">Voir les travaux</div>
-          </a>
-        </article>
+
 
 <article class="project-card">
           <a class="card-link" href="projets/experience_builder.html">
@@ -113,10 +99,45 @@
                 Réalisation d'une application avec Experience Builder pour la CA de Cergy-Pontoise afin de connaître le nombre d'entreprises / sociétés par bâtiments et par parcelles.
               </p>
               <div class="tags">
-                <span>ArcGIS Pro</span>
-                <span>ArcGIS Online</span>
-                <span>Experience Builder</span>
-              </div>
+  <span class="gis">ArcGIS Pro</span>
+  <span class="gis">ArcGIS Online</span>
+  <span class="gis">Experience Builder</span>
+</div>
+            </div>
+            <div class="card-footer">Voir le travail</div>
+          </a>
+        </article>
+
+        <article class="project-card">
+          <a class="card-link" href="projets/enquete_quali.html">
+            <div class="card-content">
+              <p class="project-type">Projet académique</p>
+              <h3>Enquête sur les perceptions et usages des piétons d'une zone commerciale à Herblay (95)</h3>
+              <p class="project-description">
+                Questionnaire et parcours commentés pour les piétons sur la Patte d'Oie d'Herblay dans le Val d'Oise.
+              </p>
+              <div class="tags">
+  <span class="analysis">LimeSurvey</span>
+  <span class="analysis">Enquête qualitative</span>
+  <span class="analysis">Enquête quantitative</span>
+</div>
+            </div>
+            <div class="card-footer">Voir le travail</div>
+          </a>
+        </article>
+
+        <article class="project-card">
+          <a class="card-link" href="projets/pyqgis.html">
+            <div class="card-content">
+              <p class="project-type">Projet académique</p>
+              <h3>Création automatique de cartes sur le risque incendie</h3>
+              <p class="project-description">
+                À partir des données Copernicus, création automatisée de cartes estimant le risque incendie par commune dans les Pyrénées, en utilisant PyQGIS.
+              </p>
+<div class="tags">
+  <span class="dev">PyQGIS</span>
+  <span class="gis">QGIS</span>
+</div>
             </div>
             <div class="card-footer">Voir le travail</div>
           </a>
@@ -131,44 +152,9 @@
                 Dans le cadre du petit concours "StoryMaps monde" organisé au sein du master, réalisation d'une StoryMap historique sur la Route des Esclaves à Ouidah au Bénin.
               </p>
               <div class="tags">
-                <span>ArcGIS Online</span>
-                <span>StoryMap</span>
-              </div>
-            </div>
-            <div class="card-footer">Voir le travail</div>
-          </a>
-        </article>
-
-<article class="project-card">
-          <a class="card-link" href="projets/presentation_AAG.html">
-            <div class="card-content">
-              <p class="project-type">Projet académique</p>
-              <h3>Participation au congrès de l'American Association of Geographers</h3>
-              <p class="project-description">
-                Présentation de mes travaux de mémoires universitaires au congrès annuel de l'AAG à San Francisco.
-              </p>
-              <div class="tags">
-                <span>International</span>
-                <span>Anglais</span>
-              </div>
-            </div>
-            <div class="card-footer">Voir le travail</div>
-          </a>
-        </article>
-
-        <article class="project-card">
-          <a class="card-link" href="projets/enquete_quali.html">
-            <div class="card-content">
-              <p class="project-type">Projet académique</p>
-              <h3>Enquête sur les perceptions et usages par les piétons d'une zone commerciale à Herblay (95)</h3>
-              <p class="project-description">
-                Questionnaire et parcours commentés pour les piétons sur la Patte d'Oie d'Herblay dans le Val d'Oise.
-              </p>
-              <div class="tags">
-                <span>Limesurvey</span>
-                <span>Enquête qualitative</span>
-                <span>Enquête quantitative</span>
-              </div>
+  <span class="gis">ArcGIS Online</span>
+  <span class="gis">StoryMap</span>
+</div>
             </div>
             <div class="card-footer">Voir le travail</div>
           </a>
@@ -183,8 +169,43 @@
                 Suite à un fait d'actualité sur la contamination de parcelles bio au prosulfocarbe en novembre 2024, utilisation de la BNV-D pour analyser les parcelles touchées.
               </p>
               <div class="tags">
-                <span>QGIS</span>
-              </div>
+  <span class="gis">QGIS</span>
+</div>
+            </div>
+            <div class="card-footer">Voir le travail</div>
+          </a>
+        </article>
+
+        <article class="project-card">
+          <a class="card-link" href="projets/memoires.html">
+            <div class="card-content">
+              <p class="project-type">Projet académique</p>
+              <h3>Mémoires de Master 1 et 2</h3>
+              <p class="project-description">
+                Les deux mémoires que j'ai réalisés portent sur les perceptions des enjeux liés à la cartographie des dessertes forestières et des outils IGN associés par leurs publics cibles (DDT et transporteurs de bois).
+              </p>
+              <div class="tags">
+  <span class="analysis">LimeSurvey</span>
+  <span class="analysis">Enquête qualitative</span>
+  <span class="analysis">Enquête quantitative</span>
+  <span class="analysis">Analyse de données</span>
+</div>
+            </div>
+            <div class="card-footer">Voir les travaux</div>
+          </a>
+        </article>
+
+        <article class="project-card">
+          <a class="card-link" href="projets/presentation_AAG.html">
+            <div class="card-content">
+              <p class="project-type">Projet académique</p>
+              <h3>Participation au congrès de l'American Association of Geographers</h3>
+              <p class="project-description">
+                Présentation de mes travaux de mémoires universitaires au congrès annuel de l'AAG à San Francisco.
+              </p>
+<div class="tags">
+  <span class="neutral">International</span>
+</div>
             </div>
             <div class="card-footer">Voir le travail</div>
           </a>
@@ -204,20 +225,32 @@
           <a class="card-link" href="projets/projet-personnel.html">
             <div class="card-content">
               <p class="project-type">Projet personnel</p>
-              <h3>Exploration cartographique personnelle</h3>
+              <h3>Création d'une application de géolocalisation de chansons</h3>
               <p class="project-description">
-                Projet libre mêlant collecte, traitement et visualisation de données géographiques.
+                Création d'une application qui propose une carte interactive musicale sur toute l'Île-de-France : chaque chanson contenant des lieux cités dans les paroles est localisée sur lesdits lieux.
               </p>
               <div class="tags">
-                <span>QGIS</span>
-                <span>Python</span>
-              </div>
+  <span class="gis">QGIS</span>
+  <span class="dev">Python</span>
+  <span class="database">PostgreSQL</span>
+  <span class="dev">Next.js</span>
+</div>
             </div>
             <div class="card-footer">Voir le projet</div>
           </a>
         </article>
       </div>
     </section>
+
+        <section id="presentation" class="project-section">
+      <div class="section-heading">
+        <h2>Présentation</h2>
+        <p>Géomaticienne.</p>
+      </div>
+
+      <div class="project-grid">
+        </section>
+  
   </main>
 
   <footer class="site-footer">
