@@ -352,3 +352,54 @@ h1 {
   text-decoration: none;
   font-size: 0.95rem;
 }
+
+.email-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.email-label {
+  color: #445269;
+}
+
+.email-link {
+  color: #0057d9;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.email-link:hover {
+  text-decoration: underline;
+}
+
+.copy-email {
+  padding: 4px 8px;
+  color: #667085;
+  background: #f7f8fa;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.82rem;
+}
+
+.copy-email:hover {
+  color: #0057d9;
+  background: #eef4fb;
+}
+
+.copy-email.copied {
+  color: #2f6b49;
+  background: #edf8f1;
+}
+
+.text-link {
+  color: #0057d9;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.text-link:hover {
+  text-decoration: underline;
+}

@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio | Léontine Grillon</title>
   <link rel="icon" type="image/png" href="images/favicon.png">
-  <link rel="stylesheet" href="style.css?v=10">
+  <link rel="stylesheet" href="style.css?v=11">
 </head>
 <body>
   <header class="site-header">
@@ -18,7 +18,7 @@
         <a href="#professionnel" class="pill">Réalisations professionnelles</a>
         <a href="#academique" class="pill">Réalisations académiques</a>
         <a href="#personnel" class="pill">Réalisation personnelle</a>
-        <a href="#presentation" class="pill">Présentation</a>
+        <a href="#presentation" class="pill">Présentation et contact</a>
       </nav>
     </div>
   </header>
@@ -114,12 +114,12 @@
               <p class="project-type">Projet académique</p>
               <h3>Enquête sur les perceptions et usages des piétons sur une zone commerciale dans le Val d'Oise</h3>
               <p class="project-description">
-                Questionnaire et parcours commentés pour les piétons sur la Patte d'Oie d'Herblay dans le Val d'Oise.
+                Questionnaire et parcours commentés pour les piétons de la Patte d'Oie d'Herblay dans le Val d'Oise.
               </p>
               <div class="tags">
   <span class="analysis">LimeSurvey</span>
-  <span class="analysis">Enquête qualitative</span>
-  <span class="analysis">Enquête quantitative</span>
+  <span class="analysis">Excel</span>
+  <span class="gis">QGIS</span>
 </div>
             </div>
             <div class="card-footer">Voir le travail</div>
@@ -149,7 +149,7 @@
               <p class="project-type">Projet académique</p>
               <h3>Réalisation d'une StoryMap sur la Route des Esclaves à Ouidah</h3>
               <p class="project-description">
-                Dans le cadre du petit concours "StoryMaps monde" organisé au sein du master, réalisation d'une StoryMap historique sur la Route des Esclaves à Ouidah au Bénin.
+                Dans le cadre d'un petit concours intitulé "StoryMaps monde" organisé au sein du master, réalisation d'une StoryMap historique sur la Route des Esclaves à Ouidah au Bénin.
               </p>
               <div class="tags">
   <span class="gis">ArcGIS Online</span>
@@ -186,9 +186,8 @@
               </p>
               <div class="tags">
   <span class="analysis">LimeSurvey</span>
-  <span class="analysis">Enquête qualitative</span>
-  <span class="analysis">Enquête quantitative</span>
-  <span class="analysis">Analyse de données</span>
+  <span class="analysis">Excel</span>
+  <span class="gis">QGIS</span>
 </div>
             </div>
             <div class="card-footer">Voir les travaux</div>
@@ -244,8 +243,36 @@
 
         <section id="presentation" class="project-section">
       <div class="section-heading">
-        <h2>Présentation</h2>
-        <p>Géomaticienne.</p>
+        <h2>Présentation et contact</h2>
+<br>
+<div class="email-row">
+  <span class="email-label">Mail :</span>
+
+  <a class="email-link"
+     href="mailto:grillon.leontine@gmail.com">
+    grillon.leontine@gmail.com
+  </a>
+
+  <button class="copy-email"
+          type="button"
+          onclick="copyEmail(this)">
+    Copier
+  </button>
+</div>
+<div class="email-row">
+  <span class="email-label">Réseau professionnel :</span>
+
+  <a class="email-link"
+     href="https://www.linkedin.com/in/leontine-grillon-8b78a0295/">
+    LinkedIn
+  </a>
+</div>
+<br>
+
+        <p>Aujourd’hui spécialisée en géomatique, je souhaite mettre mes compétences au service de structures qui travaillent sur des enjeux environnementaux, comme la préservation de la biodiversité, la gestion des territoires, ou tout ce qui concerne de près ou de loin la transition écologique. </p>
+      <br>
+        <p>En 2020, je commence mes études post-bac en classe préparatoire littéraire avec l’idée de devenir professeure de philosophie. En 2022, la lecture de l’essai <em>This Changes Everything: Capitalism vs. the Climate</em> de Naomi Klein me bouleverse et m’amène à orienter mes choix d’études vers les questions environnementales. Je poursuis alors en licence de géographie et environnement, avant de me spécialiser en géomatique en master.</p>
+      
       </div>
 
       <div class="project-grid">
@@ -258,5 +285,20 @@
       <p>© 2026 Léontine Grillon</p>
     </div>
   </footer>
+
+<script>
+  function copyEmail(button) {
+    navigator.clipboard.writeText("grillon.leontine@gmail.com");
+
+    button.textContent = "Copié";
+    button.classList.add("copied");
+
+    setTimeout(() => {
+      button.textContent = "Copier";
+      button.classList.remove("copied");
+    }, 1500);
+  }
+</script>
+
 </body>
 </html>
